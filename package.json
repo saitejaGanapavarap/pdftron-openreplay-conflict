@@ -1,0 +1,32 @@
+{
+  "name": "openreplay-webviewer-test",
+  "version": "1.0.0",
+  "description": "Minimal reproduction case for OpenReplay + PDFTron WebViewer conflict",
+  "private": true,
+  "dependencies": {
+    "@openreplay/tracker": "^16.4.5",
+    "@openreplay/tracker-assist": "^11.0.3",
+    "@pdftron/webviewer": "^10.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "serve": "npx serve build -s -p 3000",
+    "postinstall": "node -e \"const fs = require('fs'); const path = require('path'); if (fs.existsSync('node_modules/@pdftron/webviewer/public')) { fs.cpSync('node_modules/@pdftron/webviewer/public', 'public/webviewer', { recursive: true, force: true }); }\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

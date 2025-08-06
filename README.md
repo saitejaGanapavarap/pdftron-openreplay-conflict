@@ -11,6 +11,8 @@
 Corrupted reserved bit
 Uncaught TypeError: w is not a function
     at Object.p [as decompressFunction] (webviewer-core.min.js:1:978857)
+<img width="1018" height="577" alt="image" src="https://github.com/user-attachments/assets/bebbef3d-c01d-4581-a595-60e033fcda51" />
+
 ```
 
 **Affected Configuration**:

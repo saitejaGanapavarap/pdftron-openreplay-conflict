@@ -11,10 +11,8 @@
 Corrupted reserved bit
 Uncaught TypeError: w is not a function
     at Object.p [as decompressFunction] (webviewer-core.min.js:1:978857)
-<img width="1018" height="577" alt="image" src="https://github.com/user-attachments/assets/bebbef3d-c01d-4581-a595-60e033fcda51" />
-
 ```
-
+<img width="1018" height="577" alt="image" src="https://github.com/user-attachments/assets/3917a6ea-6b0f-4163-9868-23851eda4c77" />
 **Affected Configuration**:
 - OpenReplay with `useProxy: true` (default)
 - PDFTron WebViewer loading PDFs from blob URLs
